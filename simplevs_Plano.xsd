@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---EJEMPLO DE DISEÑO AL ESTILO MUÑECA RUSA CON ELEMENTOS SIMPLES 
+    Y ATRIBUTO DE TIPO ENUMERACIÓN  -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="10" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="apellidos">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="30" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="edad">
+        <xs:simpleType>
+            <xs:restriction base="xs:int">
+                <xs:minInclusive value="1" />
+                <xs:maxInclusive value="120" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>   
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datos_personales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nombre" />
+                            <xs:element ref="apellidos" />
+                            <xs:element ref="edad" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="matricula">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="parcial" />
+                        <xs:enumeration value="total" />
+                    </xs:restriction>
+                </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="alumno.xsd"> 
+  <datos_personales>
+    <nombre>Mely</nombre>
+    <apellido>Rodriguez</apellido>
+    <edad>10</edad>
+  </datos_personales>
+  <matricula> mat</matricula> 
+    
+</alumno>
