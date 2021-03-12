@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="libros.xsd"> 
-  <libros>
+xsi:noNamespaceSchemaLocation="schema.xsd"> 
+  
     <titulo>Señor Presidente</titulo>
     <autor>Miguel Angel Asturias</autor>
-    <tapa>Rustica</tapa>
-    <publicado> 12/12/12</publicado> 
-  </libros>
-  
+    <tapa>rustica</tapa>
+   <publicado> 1996-12-24 </publicado>
     
+     
 </libros>
